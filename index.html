@@ -44,7 +44,6 @@
             transform: translateY(-2px);
             background-color: #ef4444; /* Cor de hover mais escura */
         }
-
     </style>
 </head>
 <body class="antialiased">
@@ -130,48 +129,45 @@
             </div>
         </section>
 
-        <!-- Seção de Formação, Conhecimentos e Qualificações - Usando tabela para garantir o layout no PDF -->
-        <div class="md:col-span-2 mt-4">
-            <table class="w-full">
-                <tr>
-                    <td class="w-full md:w-1/2 align-top pr-4">
-                        <section id="formacao">
-                            <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-yellow-500 pb-2 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5a2 2 0 00-1 1.733V17l-1 1v2a1 1 0 001 1h18a1 1 0 001-1v-2a1 1 0 00-1-1v-4.267a2 2 0 00-1-1.733L12 14zM12 2a1 1 0 00-1 1v4a1 1 0 002 0V3a1 1 0 00-1-1z"/>
-                                </svg>
-                                Formação
-                            </h2>
-                            <div class="bg-gray-100 rounded-lg p-6 h-full hover-effect">
-                                <div class="flex flex-col h-full justify-between">
-                                    <p class="text-base font-semibold text-gray-800">Bacharelado em Ciência da Computação</p>
-                                    <p class="text-sm text-gray-600 text-right mt-2">Cursando - UNICARIOCA – 7º Período</p>
-                                </div>
-                            </div>
-                        </section>
-                    </td>
-                    <td class="w-full md:w-1/2 align-top pl-4">
-                        <section id="conhecimentos">
-                            <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-green-500 pb-2 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5l8 4.5v9l-8-4.5-8 4.5v-9l8-4.5zM12 6.5v9m-8-4.5l8-4.5 8 4.5m-8-4.5l-8-4.5"/>
-                                </svg>
-                                Conhecimentos
-                            </h2>
-                            <div class="bg-gray-100 rounded-lg p-6 h-full hover-effect">
-                                <ul class="list-disc pl-5 text-gray-800 text-sm space-y-1">
-                                    <li>Desenvolvimento: Java, Golang, TypeScript.</li>
-                                    <li>Design Gráfico: Adobe Photoshop, CorelDraw, Adobe InDesign, Adobe Illustrator.</li>
-                                    <li>Audiovisual: Adobe Premiere, Adobe After Effects.</li>
-                                </ul>
-                            </div>
-                        </section>
-                    </td>
-                </tr>
-            </table>
+        <!-- Seções de Formação, Conhecimentos e Qualificações agrupadas para controle de layout.
+             Agora, todas as seções são empilhadas verticalmente, sem flexbox de linha. -->
+        <div class="flex flex-col gap-4">
+
+            <!-- Seção de Formação -->
+            <section id="formacao">
+                <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-yellow-500 pb-2 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5a2 2 0 00-1 1.733V17l-1 1v2a1 1 0 001 1h18a1 1 0 001-1v-2a1 1 0 00-1-1v-4.267a2 2 0 00-1-1.733L12 14zM12 2a1 1 0 00-1 1v4a1 1 0 002 0V3a1 1 0 00-1-1z"/>
+                    </svg>
+                    Formação
+                </h2>
+                <div class="bg-gray-100 rounded-lg p-6 h-full hover-effect">
+                    <div class="flex flex-col h-full justify-between">
+                        <p class="text-base font-semibold text-gray-800">Bacharelado em Ciência da Computação</p>
+                        <p class="text-sm text-gray-600 text-right mt-2">Cursando - UNICARIOCA – 7º Período</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Conhecimentos -->
+            <section id="conhecimentos">
+                <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-green-500 pb-2 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5l8 4.5v9l-8-4.5-8 4.5v-9l8-4.5zM12 6.5v9m-8-4.5l8-4.5 8 4.5m-8-4.5l-8-4.5"/>
+                    </svg>
+                    Conhecimentos
+                </h2>
+                <div class="bg-gray-100 rounded-lg p-6 h-full hover-effect">
+                    <ul class="list-disc pl-5 text-gray-800 text-sm space-y-1">
+                        <li>Desenvolvimento: Java, Golang, TypeScript.</li>
+                        <li>Design Gráfico: Adobe Photoshop, CorelDraw, Adobe InDesign, Adobe Illustrator.</li>
+                        <li>Audiovisual: Adobe Premiere, Adobe After Effects.</li>
+                    </ul>
+                </div>
+            </section>
 
             <!-- Seção de Qualificações e Atividades Complementares -->
-            <section id="qualificacoes" class="mt-4">
+            <section id="qualificacoes">
                 <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-blue-500 pb-2 flex items-center">
                     <!-- Ícone de qualificação/certificado -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,7 +189,9 @@
                     </ul>
                 </div>
             </section>
+
         </div>
+
     </div>
 </div>
 
