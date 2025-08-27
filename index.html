@@ -169,7 +169,7 @@
             </section>
 
             <!-- Seção de Qualificações e Atividades Complementares -->
-            <section id="qualificacoes">
+            <section id="qualificacoes" class="mb-8">
                 <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-blue-500 pb-2 flex items-center">
                     <!-- Ícone de qualificação/certificado -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -192,8 +192,67 @@
                 </div>
             </section>
 
+            <!-- Seção de Projetos GitHub -->
+            <section id="projetos-github">
+                <h2 class="text-2xl font-bold text-black mb-4 border-b-2 border-gray-500 pb-2 flex items-center">
+                    <!-- Ícone de projeto/código -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20h4M5 12V6a2 2 0 012-2h10a2 2 0 012 2v6m-4 8H9a2 2 0 01-2-2V6h10v12a2 2 0 01-2 2z"/>
+                    </svg>
+                    Projetos GitHub
+                </h2>
+                <!-- Card do Projeto GravadoraCampista-SpringBoot -->
+                <div class="bg-gray-100 rounded-lg p-6 mb-4 hover-effect">
+                    <h3 class="text-lg font-semibold text-black mb-2">GravadoraCampista-SpringBoot</h3>
+                    <p class="text-sm text-gray-800 mb-4">Backend de uma gravadora de música, com autenticação via token JWT.</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>Tecnologias: Java, Spring Boot, Token JWT, MySQL.</li>
+                        <li>Funcionalidades: Criação de uma API para simular uma gravadora, utilizando um banco de dados MySQL para persistência de dados.</li>
+                    </ul>
+                    <a href="https://github.com/WallaceCampista/GravadoraCampista-SpringBoot" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline text-sm">Ver no GitHub</a>
+                </div>
+                <!-- Card do Projeto GravadoraCampista-Angular -->
+                <div class="bg-gray-100 rounded-lg p-6 mb-4 hover-effect">
+                    <h3 class="text-lg font-semibold text-black mb-2">GravadoraCampista-Angular</h3>
+                    <p class="text-sm text-gray-800 mb-4">Frontend para a aplicação de gravação de música, consumindo a API construída com Spring Boot.</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>Tecnologias: Angular, TypeScript, HTML, SCSS.</li>
+                        <li>Funcionalidades: Interface de usuário para interagir com a API de backend.</li>
+                    </ul>
+                    <a href="https://github.com/WallaceCampista/GravadoraCampista-Angular" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline text-sm">Ver no GitHub</a>
+                </div>
+                <!-- Card do Projeto Caça CORS -->
+                <div class="bg-gray-100 rounded-lg p-6 mb-4 hover-effect">
+                    <h3 class="text-lg font-semibold text-black mb-2">Caça CORS</h3>
+                    <p class="text-sm text-gray-800 mb-4">Ferramenta web interativa para realizar requisições HTTP e simulação de carga simples. Criada para auxiliar na depuração de APIs e problemas de CORS.</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>Tecnologias: HTML5, CSS3, Tailwind CSS, JavaScript (ES6+).</li>
+                        <li>Funcionalidades: Múltiplos métodos HTTP, editor de headers, editor de body JSON, visualização de resposta, simulação de carga.</li>
+                    </ul>
+                    <a href="https://github.com/WallaceCampista/CacaCORS" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline text-sm">Ver no GitHub</a>
+                </div>
+                <!-- Card do Projeto Processador de Logs -->
+                <div class="bg-gray-100 rounded-lg p-6 mb-4 hover-effect">
+                    <h3 class="text-lg font-semibold text-black mb-2">Processador de Logs</h3>
+                    <p class="text-sm text-gray-800 mb-4">Projeto de processamento de logs que utiliza Go, MySQL e RabbitMQ. O objetivo é receber e armazenar logs em um banco de dados.</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>Tecnologias: Go, MySQL, RabbitMQ.</li>
+                        <li>Funcionalidades: Consumo de mensagens de log de uma fila do RabbitMQ e persistência dos dados no MySQL.</li>
+                    </ul>
+                    <a href="https://github.com/WallaceCampista/ProcessadorDeLogs" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline text-sm">Ver no GitHub</a>
+                </div>
+                <!-- Card do Projeto Contador de Dedos -->
+                <div class="bg-gray-100 rounded-lg p-6 hover-effect">
+                    <h3 class="text-lg font-semibold text-black mb-2">Contador de Dedos</h3>
+                    <p class="text-sm text-gray-800 mb-4">Projeto em Python que utiliza OpenCV e MediaPipe para detectar mãos e contar o número de dedos levantados em tempo real, usando a webcam.</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>Tecnologias: Python, OpenCV, MediaPipe.</li>
+                        <li>Funcionalidades: Detecção de mãos, contagem de dedos e visualização em tempo real.</li>
+                    </ul>
+                    <a href="https://github.com/WallaceCampista/ContadorDedos" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline text-sm">Ver no GitHub</a>
+                </div>
+            </section>
         </div>
-
     </div>
 </div>
 
