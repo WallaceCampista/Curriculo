@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Wallace Campista Rocha</title>
+    <!-- Adiciona o framework Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Adiciona a fonte Inter do Google Fonts para uma tipografia limpa -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        /* Define a fonte padrão para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: rgba(31, 41, 55, 0.93); /* Fundo escuro */
+            color: #e2e8f0; /* Texto claro */
+        }
+
+        /* Estilo para a transição suave dos elementos no hover */
+        .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Define a cor do link ao ser visitado */
+        a:visited {
+            color: #9ca3af; /* Cor do link cinza */
+        }
+
+        /* Oculta o botão de voltar ao topo por padrão */
+        #scrollToTopBtn {
+            display: none;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Container principal com padding e fundo escuro -->
+<div class="container mx-auto max-w-4xl p-4 md:p-8 lg:p-12">
+    <!-- Cartão principal que agrupa todo o currículo -->
+    <div class="bg-gray-800 rounded-xl shadow-lg p-6 md:p-12">
+
+        <!-- Seção de Cabeçalho -->
+        <header class="mb-8 pb-4 border-b-2 border-gray-700">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight">Wallace Campista Rocha</h1>
+            <p class="text-xl text-gray-400 mb-6">Desenvolvedor de Software</p>
+
+            <!-- Informações de contato detalhadas -->
+            <div class="text-sm text-gray-400 space-y-1">
+                <p>Endereço: Tijuca – Rio de Janeiro – RJ | Nascimento: 2/12/1996</p>
+                <p>Telefone: <a href="tel:+5521976193597" class="hover:text-blue-400 transition-colors">(21) 97619-3597</a> | E-mail: <a href="mailto:wallace_campista@live.com" class="hover:text-blue-400 transition-colors">wallace_campista@live.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/wallace-campista-rocha-7582b3141/" target="_blank" class="hover:text-blue-400 transition-colors">linkedin.com/in/wallace-campista-rocha</a></p>
+            </div>
+        </header>
+
+        <!-- Seção de Objetivo -->
+        <section id="objetivo" class="mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4 border-b-2 border-red-500 pb-2 flex items-center">
+                <!-- Ícone de meta/objetivo -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13V9a2 2 0 012-2h14a2 2 0 012 2v4m-18 0a2 2 0 002 2h14a2 2 0 002-2m-18 0v4a2 2 0 002 2h14a2 2 0 002-2v-4m-12 0h6"/>
+                </svg>
+                Objetivo
+            </h2>
+            <p class="text-base text-gray-300 leading-relaxed">
+                Estudante de Ciência da Computação, com experiência como estagiário e posteriormente efetivado na área de desenvolvimento de software. Busco uma oportunidade como desenvolvedor para aprimorar meus conhecimentos, enfrentar novos desafios e contribuir para o crescimento da equipe e da empresa.
+            </p>
+        </section>
+
+        <!-- Seção de Experiência Profissional -->
+        <section id="experiencia" class="mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4 border-b-2 border-orange-500 pb-2 flex items-center">
+                <!-- Ícone de experiência/trabalho -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.254-8.423-3.522m16.846 0A23.931 23.931 0 0012 9c-3.183 0-6.22-1.254-8.423-3.522M15 12h3.75M12 12h3.75M12 12h-3.75M12 12V3m0 9v9"/>
+                </svg>
+                Experiência Profissional
+            </h2>
+
+            <!-- Cargo Atual -->
+            <div class="bg-gray-700 rounded-lg p-6 mb-4 hover-effect">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">Desenvolvedor Full-Stack</h3>
+                    <p class="text-sm text-gray-400">SET/2024 – Atual</p>
+                </div>
+                <p class="text-sm font-medium text-gray-400 mb-4">Secretaria de Planejamento e Gestao (SEPLAG/RJ)</p>
+                <ul class="list-disc pl-5 text-gray-300 text-sm space-y-1">
+                    <li>Desenvolvimento Full-Stack com foco em aplicações web e integração com APIs.</li>
+                    <li>Backend: Java, Spring Boot, MySQL, Postman, Swagger – criação de APIs escaláveis e seguras.</li>
+                    <li>Frontend: Angular, Bootstrap, TypeScript – interfaces responsivas e intuitivas.</li>
+                    <li>Versionamento: Git (GitLab), garantindo controle eficiente de código e colaboração.</li>
+                    <li>Metodologias Ágeis: Experiência com Kanban e Scrum para otimização da produtividade.</li>
+                    <li>Comunicação e colaboração eficaz utilizando Slack para alinhamento entre equipes.</li>
+                </ul>
+            </div>
+
+            <!-- Estágio -->
+            <div class="bg-gray-700 rounded-lg p-6 hover-effect">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-lg font-semibold text-white">Estagiário de Desenvolvimento</h3>
+                    <p class="text-sm text-gray-400">FEV/2024 – SET/2024</p>
+                </div>
+                <p class="text-sm font-medium text-gray-400 mb-4">Secretaria de Planejamento e Gestao (SEPLAG/RJ)</p>
+                <ul class="list-disc pl-5 text-gray-300 text-sm space-y-1">
+                    <li>Auxílio na manutenção e desenvolvimento de soluções digitais internas.</li>
+                    <li>Criação de APIs seguindo arquitetura MVC e autenticação JWT.</li>
+                    <li>Desenvolvimento de interfaces interativas com Angular.</li>
+                    <li>Documentação de processos e reuniões (ATAs).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção de Formação, Conhecimentos e Qualificações -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Seção de Formação -->
+            <section id="formacao">
+                <h2 class="text-2xl font-bold text-white mb-4 border-b-2 border-yellow-500 pb-2 flex items-center">
+                    <!-- Ícone de educação/diploma -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5a2 2 0 00-1 1.733V17l-1 1v2a1 1 0 001 1h18a1 1 0 001-1v-2a1 1 0 00-1-1v-4.267a2 2 0 00-1-1.733L12 14zM12 2a1 1 0 00-1 1v4a1 1 0 002 0V3a1 1 0 00-1-1z"/>
+                    </svg>
+                    Formação
+                </h2>
+                <div class="bg-gray-700 rounded-lg p-6 hover-effect">
+                    <div class="flex items-start justify-between">
+                        <p class="text-base font-semibold text-gray-300">Bacharelado em Ciência da Computação</p>
+                        <p class="text-sm text-gray-400 text-right">Cursando - UNICARIOCA – 7º Período</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Conhecimentos -->
+            <section id="conhecimentos">
+                <h2 class="text-2xl font-bold text-white mb-4 border-b-2 border-green-500 pb-2 flex items-center">
+                    <!-- Ícone de conhecimento/livro -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5l8 4.5v9l-8-4.5-8 4.5v-9l8-4.5zM12 6.5v9m-8-4.5l8-4.5 8 4.5m-8-4.5l-8-4.5"/>
+                    </svg>
+                    Conhecimentos
+                </h2>
+                <div class="bg-gray-700 rounded-lg p-6 hover-effect">
+                    <ul class="list-disc pl-5 text-gray-300 text-sm space-y-1">
+                        <li>Desenvolvimento: Java, Golang, TypeScript.</li>
+                        <li>Design Gráfico: Adobe Photoshop, CorelDraw, Adobe InDesign, Adobe Illustrator.</li>
+                        <li>Audiovisual: Adobe Premiere, Adobe After Effects.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Seção de Qualificações e Atividades Complementares -->
+            <section id="qualificacoes" class="md:col-span-2 mt-4">
+                <h2 class="text-2xl font-bold text-white mb-4 border-b-2 border-blue-500 pb-2 flex items-center">
+                    <!-- Ícone de qualificação/certificado -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4M17 12H7m12 0a9 9 0 11-18 0a9 9 0 0118 0z"/>
+                    </svg>
+                    Qualificações e Atividades Complementares
+                </h2>
+                <div class="bg-gray-700 rounded-lg p-6 hover-effect">
+                    <ul class="list-disc pl-5 text-gray-300 text-sm space-y-1">
+                        <li>Golang do Zero - Udemy (Concluído em 15/9/2025)</li>
+                        <li>Clean Architecture - Udemy (Concluído em 7/8/2025)</li>
+                        <li>Rasa Open Source - Udemy (Concluído em 2/1/2025)</li>
+                        <li>DevOps (CI/CD) com Docker, Jenkins, Bitbucket - Udemy (Concluído em 15/6/2024)</li>
+                        <li>DOCKER Completo - Do Zero ao Avançado (2024) - Udemy (Concluído em 1/4/2024)</li>
+                        <li>Segurança da Informação [NBR ISO/IEC 27.002] - Udemy (Concluído em 27/5/2022)</li>
+                        <li>Certificação Amazon AWS - Udemy (Concluído em 21/7/2021)</li>
+                        <li>Produção Audiovisual – OnByte (Concluído em 15/3/2017)</li>
+                        <li>Design Gráfico e Digitação – OnByte (Concluído em 4/7/2015)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Botão flutuante para voltar ao topo da página -->
+<button id="scrollToTopBtn" class="fixed bottom-4 right-4 bg-gray-900 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+</button>
+
+<!-- Script JavaScript para interações -->
+<script>
+    // Obtém o botão de rolagem
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Adiciona um listener para o evento de scroll
+    window.addEventListener('scroll', () => {
+        // Se o scroll vertical for maior que 200px, mostra o botão, caso contrário, esconde
+        if (window.scrollY > 200) {
+            scrollToTopBtn.style.display = 'block';
+            scrollToTopBtn.style.opacity = '1';
+        } else {
+            scrollToTopBtn.style.opacity = '0';
+            setTimeout(() => {
+                if (window.scrollY <= 200) {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            }, 300);
+        }
+    });
+
+    // Adiciona um listener para o clique no botão
+    scrollToTopBtn.addEventListener('click', () => {
+        // Rola a página suavemente para o topo
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>
